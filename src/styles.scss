@@ -1,0 +1,24 @@
+$primary-color: teal;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.red-background {
+  background-color: $primary-color;
+  color: white;
+}
+
+img {
+  display: block;
+  width: 200px;
+}
+
+nav img {
+  width: 150px;
+}
