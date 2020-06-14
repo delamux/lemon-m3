@@ -10,7 +10,8 @@
     "start:dev": "webpack-dev-server --open --config webpack.dev.js",
     "start:prod": "webpack-dev-server --open --config webpack.prod.js",
     "build:dev": "rimraf dist && webpack --config webpack.dev.js",
-    "build": "rimraf dist && webpack --config webpack.prod.js"
+    "build": "rimraf dist && webpack --config webpack.prod.js",
+    "build:perf": "rimraf dist && webpack --config webpack.perf.js"
   },
   "repository": {
     "type": "git",
@@ -40,6 +41,7 @@
     "typescript": "^3.9.5",
     "url-loader": "^4.1.0",
     "webpack": "^4.43.0",
+    "webpack-bundle-analyzer": "^3.8.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^4.2.2"
