@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { HelloWorldComponent } from "./helloWorldComponent";
 import { NavbarComponent } from "./navbarComponent";
 
-console.log(process.env.HELLO_LEMON);
+console.log(`este es mi api url: ${process.env.API_BASE}`);
 ReactDOM.render(
   <div>
     <NavbarComponent />

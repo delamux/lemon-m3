@@ -7,10 +7,10 @@
     "start": "run-p -l type-check:watch start:dev",
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch",
-    "start:dev": "webpack-dev-server --mode=development --open",
-    "start:prod": "webpack-dev-server --mode=production --open",
-    "build": "rimraf dist && webpack --mode=development",
-    "build:prod": "rimraf dist && webpack --mode=production"
+    "start:dev": "webpack-dev-server --open --config webpack.dev.js",
+    "start:prod": "webpack-dev-server --open --config webpack.prod.js",
+    "build:dev": "rimraf dist && webpack --config webpack.dev.js",
+    "build": "rimraf dist && webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -41,7 +41,8 @@
     "url-loader": "^4.1.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
